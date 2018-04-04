@@ -39,6 +39,30 @@ SAÍDA: Para cada cenário de teste da entrada, imprima a mensagem "Fib(N) = X",
 
 ## Questão 2 Fácil
 
+Em matemática, um número perfeito é um número inteiro para o qual a soma de todos os seus próprios divisores positivos (excluindo ele próprio) é igual ao próprio número. Por exemplo, o número 6 é perfeito, porque 1 + 2 + 3 é igual a 6. Sua tarefa é escrever um programa que leia números inteiros e imprimir uma mensagem informando se esses números são perfeitos ou não são perfeitos.
+
+**********
+EXEMPLO:
+**********
+
+Entrada: 
+- 3
+- 6
+- 5
+- 28
+
+Saída:
+- 6 eh perfeito
+- 5 não eh perfeito
+- 28 eh perfeito
+
+**********
+
+ENTRADA: A primeira linha contém um número inteiro T, indicando a quantidade de cenários a serem testados. Cada uma das N subsequentes linhas contém um inteiro X (1 ≤ X ≤ 108), que pode ser ou não um número perfeito.
+
+SAÍDA: Para cada cenário de teste da entrada, imprima a mensagem  “X eh perfeito” (X é perfeito) ou “X não eh perfeito” (X não é perfeito) de acordo com a especificação do enunciado.
+
+
 ## Questão 3 Fácil
 
 ## Questão 4 Fácil
