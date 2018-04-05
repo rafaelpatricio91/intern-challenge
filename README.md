@@ -105,7 +105,7 @@ ENTRADA: A primeira linha contém um número inteiro T (T ≤ 100), indicando a 
 SAÍDA: Para cada cenário de teste da entrada, imprima a mensagem  "Caso #t: R", onde t é o número do caso de teste e R é a reação de Sheldon ao resultado: "Bazinga!", "Raj trapaceou!" ou "De novo!"
 
 
-## Questão 4 (Palindrome - 2,5 pontos)
+## Questão 4 - Palindrome (2,5 pontos)
 
 Um palíndromo é uma string tal que sua reversão é igual à string original. Em outras palavras, é uma string que, quando lida de trás para frente, é igual à string original. Por exemplo, o BANANAB é um palíndromo, enquanto o BANANAS não. Neste problema estamos interessados em um assunto um pouco mais interessante.
 
@@ -135,7 +135,65 @@ ENTRADA: A primeira linha contém um número inteiro T, indicando a quantidade d
 SAÍDA: Para cada cenário de teste da entrada, caso o tamanho desta string seja maior que 1 (um) caracter, imprima a maior string encontrada. Caso contrário, imprima 'sem resultados'. No caso em que a entrada for inválida, imprima 'entrada inválida'.
 
 
-## Questão 5 (3,0 pontos)
+## Questão 5 - Digits Count (3,0 pontos)
+
+Walewska quer escrever uma lista de todos os inteiros positivos entre A e B (incluindo ambos) na base 10 e sem zeros à esquerda. Ela quer saber quantas vezes cada dígito será usado.
+
+**********
+EXEMPLO:
+**********
+
+Entrada: 
+- 6
+- A 9
+- 1 9
+- 12 321
+- 5987 6123
+- 12345678 12345679
+
+Saída:
+- entrada inválida
+- 0 1 1 1 1 1 1 1 1 1
+- 61 169 163 83 61 61 61 61 61 61
+- 134 58 28 24 23 36 147 24 27 47
+- 0 2 2 2 2 2 2 2 1 1
+
+**********
+
+ENTRADA: A primeira linha contém um número inteiro T, indicando a quantidade de cenários a serem testados. Cada uma das T subsequentes linhas contém dois inteiros A e B (1 ≤ A ≤ B ≤ 1.000)
+
+SAÍDA: Para cada cenário de teste da entrada, imprima uma única linha com 10 inteiros representando o número de vezes que cada dígito é usado ao gravar todos os inteiros entre A e B, inclusive, na base 10 e sem zeros à esquerda. Escreva o contador para cada dígito em ordem crescente de 0 a 9. Caso a entrada seja inválida, imprima 'entrada inválida'.
+
+
+## Questão 6 - (SQL) CPF Validation (1,0 ponto Extra)
+
+Guilherme Fogaça quer um relatório sobre os dados dos funcionário da Radix que estão registrados no banco de dados. Ele já recebera um relatório com problema, já que os dados CPF dos clientes vieram ser organização: alguns tinham máscara e outros não tinham.
+
+Seu trabalho, agora, é selecionar todos os CPFs de todos os clientes e aplicar uma máscara no retorno dos dados.
+
+A máscara final do CPF deve ficar: '000.000.000-00'.
+
+*******
+Schema:
+*******
+
+Dados da Tabela 'cliente':
+
+1. id (PK)	            numeric	
+2. name	                varchar (255)	
+3. street	            varchar (255)
+4. city	                varchar (255)
+5. state	            char (2)	
+6. credit_limit	        numeric
+
+Dados da Tabela 'pessoa':
+
+1. id_customers  (FK)   numeric	
+2. cpf	                char (14)	
+
+**********
+
+Monte o SQL da consulta que atualizará os cpf contidos na tabela 'pessoa' sem esquecer que o campo pode ou não possuir o dado no padrão desejado. Se desejar criar tabelas ou colunas, não esqueça de removê-las ao final. 
 
 
 ## Finalização do Desenvolvimento
