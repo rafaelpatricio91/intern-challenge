@@ -202,6 +202,10 @@ Modo 1:
 
 Assim que finalizado seu projeto crie um merge request para enviar sua alterações ao repositório original da Radix. Sua avaliação será realizada nesta versão, futuras alterações não serão consideradas. Não faça o merge request para o repositório original antes de terminar completamente todo o seu projeto.
 
+Modo 2:
+
+Envie por e-mail para o destinatário: rh@radixeng.com.br. O assunto deverá estar no padrão: "Prova 1 - [Nome] - [Tecnologia]". Não esqueça o anexo ou a url do local onde a solução está hospedada (exemplo hightail). No corpo do e-mail, faça todas as observações que julgar pertinentes para avaliação.
+
 ## Avaliação - Critérios/Requisitos Obrigatórios
 
 Você será avaliado nos seguintes aspectos, em ordem de prioridade:
