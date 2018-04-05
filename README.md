@@ -11,7 +11,7 @@ O candidato poderá escolher as seguintes tecnologias para resolução das quest
 Em caso de sinalização do RH para que a prova seja feita para uma determinada tecnologia, espera-se que o candidato mantenha aderência ao requerido.
 Acreditamos que as 4 (quatro) questões a seguir possam ser feitas em 2 horas. 
   
-## Questão 1 Fácil
+## Questão 1 (1,5 pontos)
 
 Escreva um programa que leia um número inteiro e imprima o número de Fibonacci correspondente a esse número lido. Lembre-se que os primeiros elementos da série de Fibonacci são 0 e 1 e cada termo posterior é calculado a partir da soma dos dois precedentes. Todos os números de Fibonacci calculados neste programa devem caber em um número não assinado de 64 bits.
 
@@ -37,7 +37,7 @@ ENTRADA: A primeira linha contém um número inteiro T, indicando a quantidade d
 SAÍDA: Para cada cenário de teste da entrada, imprima a mensagem "Fib(N) = X", onde X é o enésimo termo da série de Fibonacci.
 
 
-## Questão 2 Fácil
+## Questão 2 (1,5 pontos)
 
 Em matemática, um número perfeito é um número inteiro para o qual a soma de todos os seus próprios divisores positivos (excluindo ele próprio) é igual ao próprio número. Por exemplo, o número 6 é perfeito, porque 1 + 2 + 3 é igual a 6. Sua tarefa é escrever um programa que leia números inteiros e imprimir uma mensagem informando se esses números são perfeitos ou não são perfeitos.
 
@@ -63,9 +63,9 @@ ENTRADA: A primeira linha contém um número inteiro T, indicando a quantidade d
 SAÍDA: Para cada cenário de teste da entrada, imprima a mensagem  “X eh perfeito” (X é perfeito) ou “X não eh perfeito” (X não é perfeito) de acordo com a especificação do enunciado.
 
 
-## Questão 3 Fácil
+## Questão 3 (1,5 pontos)
 
-## Questão 4 Fácil
+## Questão 4 (1,5 pontos)
 
 
 ## Finalização do Desenvolvimento
