@@ -9,7 +9,7 @@ O candidato poderá escolher as seguintes tecnologias para resolução das quest
 4. NODE
 
 Em caso de sinalização do RH para que a prova seja feita para uma determinada tecnologia, espera-se que o candidato mantenha aderência ao requerido.
-Acreditamos que as 4 (quatro) questões a seguir possam ser feitas em 2 horas. 
+Acreditamos que as 6 (seis) questões a seguir possam ser feitas em 2 horas. 
   
 ## Questão 1 - Fibonacci Array (1,5 pontos)
 
