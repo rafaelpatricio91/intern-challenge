@@ -11,7 +11,7 @@ O candidato poderá escolher as seguintes tecnologias para resolução das quest
 Em caso de sinalização do RH para que a prova seja feita para uma determinada tecnologia, espera-se que o candidato mantenha aderência ao requerido.
 Acreditamos que as 4 (quatro) questões a seguir possam ser feitas em 2 horas. 
   
-## Questão 1 (1,5 pontos)
+## Questão 1 - Fibonacci Array (1,5 pontos)
 
 Escreva um programa que leia um número inteiro e imprima o número de Fibonacci correspondente a esse número lido. Lembre-se que os primeiros elementos da série de Fibonacci são 0 e 1 e cada termo posterior é calculado a partir da soma dos dois precedentes. Todos os números de Fibonacci calculados neste programa devem caber em um número não assinado de 64 bits.
 
@@ -37,7 +37,7 @@ ENTRADA: A primeira linha contém um número inteiro T, indicando a quantidade d
 SAÍDA: Para cada cenário de teste da entrada, imprima a mensagem "Fib(N) = X", onde X é o enésimo termo da série de Fibonacci.
 
 
-## Questão 2 (1,5 pontos)
+## Questão 2 - Perfect Number (1,5 pontos)
 
 Em matemática, um número perfeito é um número inteiro para o qual a soma de todos os seus próprios divisores positivos (excluindo ele próprio) é igual ao próprio número. Por exemplo, o número 6 é perfeito, porque 1 + 2 + 3 é igual a 6. Sua tarefa é escrever um programa que leia números inteiros e imprimir uma mensagem informando se esses números são perfeitos ou não são perfeitos.
 
@@ -63,9 +63,55 @@ ENTRADA: A primeira linha contém um número inteiro T, indicando a quantidade d
 SAÍDA: Para cada cenário de teste da entrada, imprima a mensagem  “X eh perfeito” (X é perfeito) ou “X não eh perfeito” (X não é perfeito) de acordo com a especificação do enunciado.
 
 
-## Questão 3 (1,5 pontos)
+## Questão 3 - Big Bang Theory - Bazinga (1,5 pontos)
 
-## Questão 4 (1,5 pontos)
+No oitavo episódio da segunda temporada de Big Bang Theory, chamado "The Lizard-Spock Expansion", Sheldon e Raj estão discutindo sobre o que é melhor: o filme Saturno 3 ou o programa de TV Deep Space 9. Raj, então, sugere que escolha seja baseada no vecendor de "pedra-papel-tesoura". No entanto, Sheldon diz que no jogo de pedra-papel-tesoura, jogadores familiarizados uns com os outros vão empatar de 75% a 80% das vezes devido  ao número limitado de opções e, então, sugire "pedra-papel-tesoura-lagarto-Spock".
+
+As regras do jogo são:
+
+1. tesoura corta papel;
+2. papel cobre pedra;
+3. pedra esmaga lagarto;
+4. lagarto envenena Spock;
+5. Spock esmaga tesouras;
+6. tesoura decapita lagarto;
+7. lagarto come o papel;
+8. papel refuta Spock;
+9. Spock vaporiza a rocha;
+10.pedra esmaga tesoura.
+ 
+
+Ambos escolheram Spock e o jogo empata! No entanto, não é difícil perceber o que aconteceria se o jogo tivesse continuado. No caso da vitória de Sheldon, ele teria dito: "Bazinga!"; se Raj tivesse vencido, Sheldon declararia: "Raj trapaceou!" ("Raj traiu" em portugues); no caso de empate, ele pedia uma nova rodada: "De novo!". Dadas as opções escolhidas por ambos, faça um programa que imprima a reação de Sheldon ao resultado.
+
+**********
+EXEMPLO:
+**********
+
+Entrada: 
+- 3
+- papel pedra
+- lagarto tesoura
+- Spock Spock
+
+Saída:
+- Caso #1: Bazinga!
+- Caso #2: Raj trapaceou!
+- Caso #3: De novo!
+
+**********
+
+ENTRADA: A primeira linha contém um número inteiro T (T ≤ 100), indicando a quantidade de cenários a serem testados. Cada uma das N subsequentes linhas contém as opções de Sheldon e Raj, separadas por um espaço em branco. As opções são: pedra, papel, tesoura, lagarto e spock.
+
+SAÍDA: Para cada cenário de teste da entrada, imprima a mensagem  "Caso #t: R", onde t é o número do caso de teste e R é a reação de Sheldon ao resultado: "Bazinga!", "Raj trapaceou!" ou "De novo!"
+
+
+## Questão 4 (Palindrome - 2,5 pontos)
+
+Um palíndromo é uma string tal que sua reversão é igual à string original. Em outras palavras, é uma string que, quando lida de trás para frente, é igual à string original. Por exemplo, o BANANAB é um palíndromo, enquanto o BANANAS não. Neste problema estamos interessados ​​em um assunto um pouco mais interessante.
+
+Dada uma string S, queremos encontrar uma subsequência que seja um palíndromo. Uma subsequência é uma string que pode ser obtida da remoção de zero ou mais caracteres da string original. Por exemplo, ANNA é uma subsequência de BANANAS.
+
+## Questão 5 (3,0 pontos)
 
 
 ## Finalização do Desenvolvimento
