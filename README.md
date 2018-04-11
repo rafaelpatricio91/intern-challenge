@@ -109,7 +109,7 @@ SAÍDA: Para cada cenário de teste da entrada, imprima a mensagem  "Caso #t: R"
 
 Um palíndromo é uma string tal que sua reversão é igual à string original. Em outras palavras, é uma string que, quando lida de trás para frente, é igual à string original. Por exemplo, o BANANAB é um palíndromo, enquanto o BANANAS não. Neste problema estamos interessados em um assunto um pouco mais interessante.
 
-Dada uma string S, queremos encontrar a MAIOR subsequência que seja um palíndromo (Strings de 1(um) caracter não serão considerados como palíndromo). Uma subsequência é uma string que pode ser obtida da remoção de zero ou mais caracteres da string original. Por exemplo, ANNA é a maior subsequência de BANANAS (retirando-se os caracteres nas posições 0, 3 e 6).
+Dada uma string S, queremos encontrar a MAIOR subsequência que seja um palíndromo (Strings de 1(um) caracter não serão considerados como palíndromo). Uma subsequência é uma string que pode ser obtida da remoção de zero ou mais caracteres da string original. Por exemplo, ANANA é a maior subsequência de BANANAS (retirando-se os caracteres nas posições 0 e 6).
 
 **********
 EXEMPLO:
@@ -123,8 +123,8 @@ Entrada:
 - A1A
 
 Saída:
-- ANNA
-- AA
+- ANANA
+- ATA
 - sem resultados
 - entrada inválida
 
