@@ -9,7 +9,11 @@ O candidato poderá escolher as seguintes tecnologias para resolução das quest
 4. NODE
 
 Em caso de sinalização do RH para que a prova seja feita para uma determinada tecnologia, espera-se que o candidato mantenha aderência ao requerido.
-Acreditamos que as 6 (seis) questões a seguir possam ser feitas em 2 horas. 
+Acreditamos que as 6 (seis) questões a seguir possam ser feitas em até 3 dias. 
+
+
+ANÁLISE DE SIMILARIDADE DE CÓDIGOS-FONTE:
+Possuimos um banco de respostas em constante atualização para as questões abaixo. O código enviado passará por uma análise de similaridade onde conseguimos, facilamente, identificar se houve ou não cópia de código (sejam pedaços ou inteiros). Seja íntegro e honesto na elaboração de suas respostas.
   
 ## Questão 1 - Fibonacci Array (1,5 pontos)
 
@@ -77,8 +81,8 @@ As regras do jogo são:
 6. tesoura decapita lagarto;
 7. lagarto come o papel;
 8. papel refuta Spock;
-9. Spock vaporiza a rocha;
-10.pedra esmaga tesoura.
+9. Spock vaporiza a pedra;
+10.pedra esmaga tesoura;
  
 
 Ambos escolheram Spock e o jogo empata! No entanto, não é difícil perceber o que aconteceria se o jogo tivesse continuado. No caso da vitória de Sheldon, ele teria dito: "Bazinga!"; se Raj tivesse vencido, Sheldon declararia: "Raj trapaceou!" ("Raj traiu" em portugues); no caso de empate, ele pedia uma nova rodada: "De novo!". Dadas as opções escolhidas por ambos, faça um programa que imprima a reação de Sheldon ao resultado.
