@@ -144,7 +144,7 @@ EXEMPLO:
 **********
 
 Entrada: 
-- 6
+- 5
 - A 9
 - 1 9
 - 12 321
@@ -160,7 +160,7 @@ Saída:
 
 **********
 
-ENTRADA: A primeira linha contém um número inteiro T, indicando a quantidade de cenários a serem testados. Cada uma das T subsequentes linhas contém dois inteiros A e B (1 ≤ A ≤ B ≤ 1.000)
+ENTRADA: A primeira linha contém um número inteiro T, indicando a quantidade de cenários a serem testados. Cada uma das T subsequentes linhas contém dois inteiros A e B (1 ≤ A ≤ B ≤ 1.000.000)
 
 SAÍDA: Para cada cenário de teste da entrada, imprima uma única linha com 10 inteiros representando o número de vezes que cada dígito é usado ao gravar todos os inteiros entre A e B, inclusive, na base 10 e sem zeros à esquerda. Escreva o contador para cada dígito em ordem crescente de 0 a 9. Caso a entrada seja inválida, imprima 'entrada inválida'.
 
