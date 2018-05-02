@@ -67,46 +67,41 @@ ENTRADA: A primeira linha contém um número inteiro T, indicando a quantidade d
 SAÍDA: Para cada cenário de teste da entrada, imprima a mensagem  “X eh perfeito” (X é perfeito) ou “X não eh perfeito” (X não é perfeito) de acordo com a especificação do enunciado.
 
 
-## Questão 3 - Big Bang Theory - Bazinga (1,5 pontos)
+## Questão 3 - (SQL) CPF Validation (1,5 ponto)
 
-No oitavo episódio da segunda temporada de Big Bang Theory, chamado "The Lizard-Spock Expansion", Sheldon e Raj estão discutindo sobre o que é melhor: o filme Saturno 3 ou o programa de TV Deep Space 9. Raj, então, sugere que escolha seja baseada no vecendor de "pedra-papel-tesoura". No entanto, Sheldon diz que no jogo de pedra-papel-tesoura, jogadores familiarizados uns com os outros vão empatar de 75% a 80% das vezes devido  ao número limitado de opções e, então, sugire "pedra-papel-tesoura-lagarto-Spock".
+Guilherme Fogaça quer um relatório sobre os dados dos funcionário da Radix que estão registrados no banco de dados. Ele já recebera um relatório com problema, já que os dados CPF dos clientes vieram ser organização: alguns tinham máscara e outros não tinham.
 
-As regras do jogo são:
+Seu trabalho, agora, é selecionar todos os CPFs de todos os clientes e aplicar uma máscara no retorno dos dados.
 
-1. tesoura corta papel;
-2. papel cobre pedra;
-3. pedra esmaga lagarto;
-4. lagarto envenena Spock;
-5. Spock esmaga tesouras;
-6. tesoura decapita lagarto;
-7. lagarto come o papel;
-8. papel refuta Spock;
-9. Spock vaporiza a pedra;
-10.pedra esmaga tesoura;
- 
+A máscara final do CPF deve ficar: '000.000.000-00'.
 
-Ambos escolheram Spock e o jogo empata! No entanto, não é difícil perceber o que aconteceria se o jogo tivesse continuado. No caso da vitória de Sheldon, ele teria dito: "Bazinga!"; se Raj tivesse vencido, Sheldon declararia: "Raj trapaceou!" ("Raj traiu" em portugues); no caso de empate, ele pedia uma nova rodada: "De novo!". Dadas as opções escolhidas por ambos, faça um programa que imprima a reação de Sheldon ao resultado.
+*******
+Schema:
+*******
 
-**********
-EXEMPLO:
-**********
+Dados da Tabela 'cliente':
 
-Entrada: 
-- 3
-- papel pedra
-- lagarto tesoura
-- Spock Spock
+1. id (PK)	            numeric	
+2. name	                varchar (255)	
+3. street	            varchar (255)
+4. city	                varchar (255)
+5. state	            char (2)	
+6. credit_limit	        numeric
 
-Saída:
-- Caso #1: Bazinga!
-- Caso #2: Raj trapaceou!
-- Caso #3: De novo!
+Dados da Tabela 'pessoa':
+
+1. id_customers  (FK)   numeric	
+2. cpf	                char (14)	
+
+Relação:
+
+'id_customers' (da tabela 'pessoa') é uma chave estrangeira para 'id' (da tabela 'cliente')
 
 **********
 
-ENTRADA: A primeira linha contém um número inteiro T (T ≤ 100), indicando a quantidade de cenários a serem testados. Cada uma das T subsequentes linhas contém as opções de Sheldon e Raj, separadas por um espaço em branco. As opções são: pedra, papel, tesoura, lagarto e spock.
 
-SAÍDA: Para cada cenário de teste da entrada, imprima a mensagem  "Caso #t: R", onde t é o número do caso de teste e R é a reação de Sheldon ao resultado: "Bazinga!", "Raj trapaceou!" ou "De novo!"
+Monte o SQL da consulta que atualizará os cpf contidos na tabela 'pessoa' sem esquecer que o campo pode ou não possuir o dado no padrão desejado. Se desejar criar tabelas ou colunas, não esqueça de removê-las ao final. 
+
 
 
 ## Questão 4 - Palindrome (2,5 pontos)
@@ -169,35 +164,48 @@ ENTRADA: A primeira linha contém um número inteiro T, indicando a quantidade d
 SAÍDA: Para cada cenário de teste da entrada, imprima uma única linha com 10 inteiros representando o número de vezes que cada dígito é usado ao gravar todos os inteiros entre A e B, inclusive, na base 10 e sem zeros à esquerda. Escreva o contador para cada dígito em ordem crescente de 0 a 9. Caso a entrada seja inválida, imprima 'entrada inválida'.
 
 
-## Questão 6 - (SQL) CPF Validation (1,0 ponto Extra)
+## Questão 6 - Big Bang Theory - Bazinga (1,0 ponto EXTRA)
 
-Guilherme Fogaça quer um relatório sobre os dados dos funcionário da Radix que estão registrados no banco de dados. Ele já recebera um relatório com problema, já que os dados CPF dos clientes vieram ser organização: alguns tinham máscara e outros não tinham.
+No oitavo episódio da segunda temporada de Big Bang Theory, chamado "The Lizard-Spock Expansion", Sheldon e Raj estão discutindo sobre o que é melhor: o filme Saturno 3 ou o programa de TV Deep Space 9. Raj, então, sugere que escolha seja baseada no vecendor de "pedra-papel-tesoura". No entanto, Sheldon diz que no jogo de pedra-papel-tesoura, jogadores familiarizados uns com os outros vão empatar de 75% a 80% das vezes devido  ao número limitado de opções e, então, sugire "pedra-papel-tesoura-lagarto-Spock".
 
-Seu trabalho, agora, é selecionar todos os CPFs de todos os clientes e aplicar uma máscara no retorno dos dados.
+As regras do jogo são:
 
-A máscara final do CPF deve ficar: '000.000.000-00'.
+1. tesoura corta papel;
+2. papel cobre pedra;
+3. pedra esmaga lagarto;
+4. lagarto envenena Spock;
+5. Spock esmaga tesouras;
+6. tesoura decapita lagarto;
+7. lagarto come o papel;
+8. papel refuta Spock;
+9. Spock vaporiza a pedra;
+10. pedra esmaga tesoura;
 
-*******
-Schema:
-*******
+ 
 
-Dados da Tabela 'cliente':
+Ambos escolheram Spock e o jogo empata! No entanto, não é difícil perceber o que aconteceria se o jogo tivesse continuado. No caso da vitória de Sheldon, ele teria dito: "Bazinga!"; se Raj tivesse vencido, Sheldon declararia: "Raj trapaceou!" ("Raj traiu" em portugues); no caso de empate, ele pedia uma nova rodada: "De novo!". Dadas as opções escolhidas por ambos, faça um programa que imprima a reação de Sheldon ao resultado.
 
-1. id (PK)	            numeric	
-2. name	                varchar (255)	
-3. street	            varchar (255)
-4. city	                varchar (255)
-5. state	            char (2)	
-6. credit_limit	        numeric
+**********
+EXEMPLO:
+**********
 
-Dados da Tabela 'pessoa':
+Entrada: 
+- 3
+- papel pedra
+- lagarto tesoura
+- Spock Spock
 
-1. id_customers  (FK)   numeric	
-2. cpf	                char (14)	
+Saída:
+- Caso #1: Bazinga!
+- Caso #2: Raj trapaceou!
+- Caso #3: De novo!
 
 **********
 
-Monte o SQL da consulta que atualizará os cpf contidos na tabela 'pessoa' sem esquecer que o campo pode ou não possuir o dado no padrão desejado. Se desejar criar tabelas ou colunas, não esqueça de removê-las ao final. 
+ENTRADA: A primeira linha contém um número inteiro T (T ≤ 100), indicando a quantidade de cenários a serem testados. Cada uma das T subsequentes linhas contém as opções de Sheldon e Raj, separadas por um espaço em branco. As opções são: pedra, papel, tesoura, lagarto e spock.
+
+SAÍDA: Para cada cenário de teste da entrada, imprima a mensagem  "Caso #t: R", onde t é o número do caso de teste e R é a reação de Sheldon ao resultado: "Bazinga!", "Raj trapaceou!" ou "De novo!"
+
 
 
 ## Finalização do Desenvolvimento
