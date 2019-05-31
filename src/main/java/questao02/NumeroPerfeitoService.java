@@ -8,36 +8,34 @@ public class NumeroPerfeitoService
 {
 	@Inject
 	private NumeroPerfeito p;
-	@Inject
-	private NumeroPerfeitoService s;
-	int valor;
+	int v, sum;
 	
 	public boolean calculaNumPerfeito(int valor)
 	{
 		System.out.println("service entrou " + valor);
+		System.out.println("getsum: " + (p.getSum() + 1)) ;
 		for (int i = 1; i < valor; i++)
-		{
+		{ System.out.println(i);
 			if ( (valor%i)==0 )
 			{
 				p.setSum( (p.getSum() + i) );
+//				sum += i;
+				System.out.println("sum: " + p.getSum());
 			}
 		}
 		
 		if (p.getSum() == valor)
 		{
+			System.out.println("sum: " + p.getSum());
 			return true;
 		}
 		else 
 		{
+			System.out.println("sum: " + p.getSum());
 			return false;
 		}
 	}
 	
-	public static void main(String[] args)
-	{
-		
-	}
-
 	public NumeroPerfeito getP()
 	{
 		return p;
@@ -47,27 +45,6 @@ public class NumeroPerfeitoService
 	{
 		this.p = p;
 	}
-
-	public int getValor()
-	{
-		return valor;
-	}
-
-	public void setValor(int valor)
-	{
-		this.valor = valor;
-	}
-
-	public NumeroPerfeitoService getS()
-	{
-		return s;
-	}
-
-	public void setS(NumeroPerfeitoService s)
-	{
-		this.s = s;
-	}
-	
 
 }
 

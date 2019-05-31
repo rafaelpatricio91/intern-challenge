@@ -2,8 +2,8 @@ package questao02.model;
 
 public class NumeroPerfeito
 {
-	private Integer valor;
-	private Integer sum;
+	private Integer valor=0;
+	private Integer sum=0;
 	
 	public Integer getValor()
 	{

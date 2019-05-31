@@ -22,18 +22,22 @@
 	<div>
 		<h:form>
 	
-			<f:facet name="header">Números Perfeitos</f:facet>
+			<f:facet name="header">Sequência de Fibonacci</f:facet>
 
-				<p:outputLabel value="Informe o valor: " />
-				<p:inputText id="valor" value="#{mBPerfeito.valor}" />
+				<p:outputLabel value="Query pra atualizar CPF: " /> <br/>
 				
-				<p:outputLabel />
-				<p:commandButton value="Checar" icon=""
-					action="#{mBPerfeito.checaNumPerfeito(mBPerfeito.valor)}" update="@form" />
+				<p:outputLabel id="resultado" style="background-color: yellow; font-family: Courier New; font-size: 16" > <br/>
+					update pessoa set cpf = <br/>
+					    CONCAT( SUBSTRING(cpf,1,3) , '.', <br/>
+						SUBSTRING(cpf,4,3), '.', <br/>
+						SUBSTRING(cpf,7,3), '-', <br/>
+						SUBSTRING(cpf,10,2)) <br/>
+					where length(cpf) = 11;
+				</p:outputLabel>
+							   
+	
 				
-				 <p:outputLabel id="resultado" style="background-color: yellow" 
-							   value="#{mBPerfeito.valor} #{mBPerfeito.mensagem}"> </p:outputLabel>
-
+	
 		</h:form>
 	</div>
 </h:body>

@@ -1,10 +1,8 @@
 package questao02;
 
-import javax.inject.Inject;
 
 public class Teste
 {
-	@Inject
 	private NumeroPerfeitoService s;
 	
 	public static void main(String[] args)

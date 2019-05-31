@@ -20,7 +20,7 @@ public class MBPerfeito implements Serializable
 	@Inject
 	private NumeroPerfeitoService s;
 	
-	int valor, valor2;
+	Integer valor;
 	String mensagem;
 	
 	public void checaNumPerfeito(int valor)
@@ -53,24 +53,23 @@ public class MBPerfeito implements Serializable
 		this.mensagem = mensagem;
 	}
 
-	public int getValor()
+	public NumeroPerfeitoService getS()
+	{
+		return s;
+	}
+
+	public void setS(NumeroPerfeitoService s)
+	{
+		this.s = s;
+	}
+
+	public Integer getValor()
 	{
 		return valor;
 	}
 
-	public void setValor(int valor)
+	public void setValor(Integer valor)
 	{
 		this.valor = valor;
 	}
-
-	public int getValor2()
-	{
-		return valor2;
-	}
-
-	public void setValor2(int valor2)
-	{
-		this.valor2 = valor2;
-	}
-	
 }

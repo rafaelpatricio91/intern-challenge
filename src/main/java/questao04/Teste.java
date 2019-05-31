@@ -4,12 +4,24 @@ public class Teste
 {
 	public static void main(String[] args)
 	{
-		String palavraFixa="franca";
-		String palavra=palavraFixa;
-		String temp="";
 		PalindromoService ps = new PalindromoService();
+		String palavra="banana5";
+		ps.setPalavraFixa(palavra);
 		
-		ps.escrevePalidromo(palavra);
+		if (ps.testeSemAlterar(palavra))
+		{
+			System.out.println("palindromo: " + palavra);
+		}
+		
+		if (ps.temNumero(palavra))
+		{
+			System.out.println("invalido tem numero ai");
+		}
+		else
+		{
+			ps.testeRetirandoLetras(palavra);
+		}
+		
 		
 	}
 	
