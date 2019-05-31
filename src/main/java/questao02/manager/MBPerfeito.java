@@ -16,8 +16,6 @@ public class MBPerfeito implements Serializable
 	private static final long serialVersionUID = 1L;
 	
 	@Inject
-	private NumeroPerfeito perfeito;
-	@Inject
 	private NumeroPerfeitoService s;
 	
 	Integer valor;
@@ -35,15 +33,6 @@ public class MBPerfeito implements Serializable
 		}
 	}
 	
-	public NumeroPerfeito getPerfeito()
-	{
-		return perfeito;
-	}
-
-	public void setPerfeito(NumeroPerfeito perfeito)
-	{
-		this.perfeito = perfeito;
-	}
 	public String getMensagem()
 	{
 		return mensagem;

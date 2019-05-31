@@ -8,7 +8,7 @@ public class Teste
 		String palavra="banana5";
 		ps.setPalavraFixa(palavra);
 		
-		if (ps.testeSemAlterar(palavra))
+		if (ps.testaSemAlterar(palavra))
 		{
 			System.out.println("palindromo: " + palavra);
 		}

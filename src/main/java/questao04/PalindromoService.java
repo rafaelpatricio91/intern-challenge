@@ -2,8 +2,9 @@ package questao04;
 
 public class PalindromoService
 {
+	
+	
 	private String palavraFixa="";
-	String palavra=palavraFixa;
 	String temp="";
 	String palindromo="";
 	
@@ -25,11 +26,11 @@ public class PalindromoService
 		{
 			temp += palavra.charAt(i);
 		}
-		
+		System.out.println(temp);
 		return temp;
 	}
 	
-	public boolean testeSemAlterar(String palavra)
+	public boolean testaSemAlterar(String palavra)
 	{
 		boolean bol = false;
 		if (palavra.equals(invertePalavra(palavra)) && !palavra.isEmpty())
@@ -46,6 +47,7 @@ public class PalindromoService
 	public String testeRetirandoLetras(String palavra)
 	{
 		int i = 1;
+		this.palavraFixa = palavra;
 		if (!(palavra.equalsIgnoreCase(temp) && palavra.isEmpty()) ) 
 		{
 			while (palavra.length() > 1 && !palavra.equals(temp) && !palavra.isEmpty())

@@ -5,7 +5,7 @@
 	 xmlns:p="http://primefaces.org/ui">
 <h:head>
 	<meta charset="UTF-8"/>
-	<title>Fibonacci</title>
+	<title>Palíndromo</title>
 </h:head>
 <h:body>
 
@@ -25,15 +25,15 @@
 	
 			<f:facet name="header">Sequência de Fibonacci</f:facet>
 
-				<p:outputLabel value="Informe o valor: " />
-				<p:inputText id="valor" value="#{fiboMB.val}" />
+				<p:outputLabel value="Informe a palavra: " />
+				<p:inputText id="valor" value="#{palindromoMB.palavra}" />
 				
 				<p:outputLabel />
-				<p:commandButton value="Calcular" icon=""
-					action="#{fiboMB.calcular(fiboMB.val)}" update="@form" />
+				<p:commandButton value="Testar" icon=""
+					action="#{palindromoMB.testaPalindromo(palindromoMB.palavra)}" update="@form" />
 				
 				<p:outputLabel id="resultado" style="background-color: yellow" 
-							   value="O valor anterior na sequência de Fibonacci é: #{fiboMB.val2}">
+							   value="#{palindromoMB.msg}">
 					
 				</p:outputLabel>
 	
