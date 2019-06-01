@@ -2,7 +2,7 @@ package questao06;
 
 import javax.inject.Inject;
 
-public class JokenpoPlusService
+public class JokenpoPlus
 {
 	@Inject
 	Partida p;
@@ -10,7 +10,8 @@ public class JokenpoPlusService
 	String msg="";
 	
 	public String jokenpo(Integer v1, Integer v2)
-	{
+	{	//varios switchs testando todas as combinações possíveis
+		//tentei pensar em uma solução mais engenhosa mas nao consegui
 		switch (v1)
 		{
 		case 1:

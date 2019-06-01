@@ -4,7 +4,7 @@ public class Teste
 {
 	public static void main(String[] args)
 	{
-		PalindromoService ps = new PalindromoService();
+		Palindromo ps = new Palindromo();
 		String palavra="banana5";
 		ps.setPalavraFixa(palavra);
 		

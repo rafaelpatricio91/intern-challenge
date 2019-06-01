@@ -6,7 +6,7 @@ import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import questao01.service.FibonacciService;
+import questao01.service.FibonacciLogica;
 
 @Named
 @RequestScoped
@@ -15,7 +15,7 @@ public class FiboMB implements Serializable
 	private static final long serialVersionUID = 1L;
 	
 	@Inject
-	private FibonacciService fs;
+	private FibonacciLogica fs;
 	Long val;
 	Long val2;
 	
@@ -26,12 +26,12 @@ public class FiboMB implements Serializable
 		System.out.println(val2);
 	}
 
-	public FibonacciService getFs()
+	public FibonacciLogica getFs()
 	{
 		return fs;
 	}
 
-	public void setFs(FibonacciService fs)
+	public void setFs(FibonacciLogica fs)
 	{
 		this.fs = fs;
 	}

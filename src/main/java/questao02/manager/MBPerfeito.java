@@ -6,7 +6,7 @@ import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import questao02.NumeroPerfeitoService;
+import questao02.NumeroPerfeitoLogica;
 import questao02.model.NumeroPerfeito;
 
 @Named
@@ -16,7 +16,7 @@ public class MBPerfeito implements Serializable
 	private static final long serialVersionUID = 1L;
 	
 	@Inject
-	private NumeroPerfeitoService s;
+	private NumeroPerfeitoLogica s;
 	
 	Integer valor;
 	String mensagem;
@@ -42,12 +42,12 @@ public class MBPerfeito implements Serializable
 		this.mensagem = mensagem;
 	}
 
-	public NumeroPerfeitoService getS()
+	public NumeroPerfeitoLogica getS()
 	{
 		return s;
 	}
 
-	public void setS(NumeroPerfeitoService s)
+	public void setS(NumeroPerfeitoLogica s)
 	{
 		this.s = s;
 	}

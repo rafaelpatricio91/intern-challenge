@@ -9,7 +9,7 @@ import javax.inject.Named;
 public class JokenpoMB
 {
 	@Inject
-	JokenpoPlusService service;
+	JokenpoPlus service;
 	@Inject
 	Partida p;
 	
@@ -18,12 +18,12 @@ public class JokenpoMB
 		p.setQuemGanhou(service.jokenpo(v1, v2));
 	}
 
-	public JokenpoPlusService getService()
+	public JokenpoPlus getService()
 	{
 		return service;
 	}
 
-	public void setService(JokenpoPlusService service)
+	public void setService(JokenpoPlus service)
 	{
 		this.service = service;
 	}

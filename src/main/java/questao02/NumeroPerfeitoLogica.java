@@ -4,7 +4,7 @@ import javax.inject.Inject;
 
 import questao02.model.NumeroPerfeito;
 
-public class NumeroPerfeitoService
+public class NumeroPerfeitoLogica
 {
 	@Inject
 	private NumeroPerfeito p;
@@ -12,26 +12,21 @@ public class NumeroPerfeitoService
 	
 	public boolean calculaNumPerfeito(int valor)
 	{
-		System.out.println("service entrou " + valor);
-		System.out.println("getsum: " + (p.getSum() + 1)) ;
 		for (int i = 1; i < valor; i++)
-		{ System.out.println(i);
+		{ 	//testa se o número é par e acumula o somatório dos numeros divisiveis
 			if ( (valor%i)==0 )
 			{
 				p.setSum( (p.getSum() + i) );
-//				sum += i;
-				System.out.println("sum: " + p.getSum());
 			}
 		}
 		
+		//Se o somatório dos divisores for igual ao valor, o numero é perfeito
 		if (p.getSum() == valor)
 		{
-			System.out.println("sum: " + p.getSum());
 			return true;
 		}
 		else 
 		{
-			System.out.println("sum: " + p.getSum());
 			return false;
 		}
 	}

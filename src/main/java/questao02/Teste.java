@@ -3,7 +3,7 @@ package questao02;
 
 public class Teste
 {
-	private NumeroPerfeitoService s;
+	private NumeroPerfeitoLogica s;
 	
 	public static void main(String[] args)
 	{

@@ -4,7 +4,7 @@ import javax.inject.Inject;
 
 import questao01.model.Fibonacci;
 
-public class FibonacciService
+public class FibonacciLogica
 {
 	@Inject
 	private Fibonacci f;

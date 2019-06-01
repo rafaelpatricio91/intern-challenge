@@ -9,23 +9,24 @@ import javax.inject.Named;
 public class PalindromoMB
 {	
 	@Inject
-	PalindromoService service;
+	Palindromo p;
 	String palavra;
 	String msg;
 	
+	//Aqui eu so chamo as funções passando o valor informado na pagina
 	public void testaPalindromo(String palavra)
 	{
-		if (service.temNumero(palavra))
+		if (p.temNumero(palavra))
 		{
 			msg = "Entrada inválida";
 		} 
-		else if (service.testaSemAlterar(palavra)) 
+		else if (p.testaSemAlterar(palavra)) 
 		{
 			msg=palavra;
 		}
 		else 
 		{
-			palavra = service.testeRetirandoLetras(palavra);
+			palavra = p.testeRetirandoLetras(palavra);
 			
 			if (palavra.length() > 1)
 			{
@@ -38,14 +39,14 @@ public class PalindromoMB
 		}
 	}
 
-	public PalindromoService getService()
+	public Palindromo getService()
 	{
-		return service;
+		return p;
 	}
 
-	public void setService(PalindromoService service)
+	public void setService(Palindromo service)
 	{
-		this.service = service;
+		this.p = service;
 	}
 
 	public String getPalavra()
