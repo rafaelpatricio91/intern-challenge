@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	 xmlns:h="http://java.sun.com/jsf/html"
+	 xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	 xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta charset="UTF-8"/>
+	<title>SQL CPF</title>
+</h:head>
+<h:body>
+
+	<header>
+		<p:menubar style="margin-bottom: 20px">
+			<p:menuitem value="Fibonacci" url="questao01.xhtml" icon=" ui-icon-check" />
+			<p:menuitem value="Perfect Number" url="questao02.xhtml" icon=" ui-icon-check" />
+			<p:menuitem value="SQL CPF Validation" url="questao03.xhtml" icon=" ui-icon-check" />
+			<p:menuitem value="Palíndromo" url="questao04.xhtml" icon=" ui-icon-check" />
+			<p:menuitem value="Digit Count" url="questao05.xhtml" icon=" ui-icon-check" />
+			<p:menuitem value="Jokenpo 2.0" url="questao06.xhtml" icon=" ui-icon-check" />
+		</p:menubar>
+	</header>
+
+	<div>
+		<h:form>
+	
+			<f:facet name="header">Sequência de Fibonacci</f:facet>
+
+				<p:outputLabel value="Query pra atualizar CPF: " /> <br/>
+				
+				<p:outputLabel id="resultado" style="background-color: yellow; font-family: Courier New; font-size: 16" > <br/>
+					update pessoa set cpf = <br/>
+					    CONCAT( SUBSTRING(cpf,1,3) , '.', <br/>
+						SUBSTRING(cpf,4,3), '.', <br/>
+						SUBSTRING(cpf,7,3), '-', <br/>
+						SUBSTRING(cpf,10,2)) <br/>
+					where length(cpf) = 11;
+				</p:outputLabel>
+							   
+	
+				
+	
+		</h:form>
+	</div>
+</h:body>
+</html>
